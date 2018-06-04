@@ -1,0 +1,27 @@
+{
+  "name": "xiaoai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Treasure",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/koa": "^2.0.46",
+    "@types/koa-router": "^7.0.28",
+    "jest": "^23.1.0",
+    "koa-body": "^2.6.0",
+    "ts-jest": "^22.4.6",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.9.1"
+  },
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-helmet": "^4.0.0",
+    "koa-response-time": "^2.0.0",
+    "koa-router": "^7.4.0",
+    "logger": "0.0.1"
+  }
+}
