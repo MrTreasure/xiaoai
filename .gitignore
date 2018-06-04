@@ -5,3 +5,4 @@ dist/
 .vscode/
 logs/
 coverage/
+src/config.ts
