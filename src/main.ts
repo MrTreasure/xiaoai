@@ -25,3 +25,5 @@ const server = app.listen(8080, () => {
   const address = server.address()
   log(chalk.green`service is running at ${address['address']}:${address['port']}`)
 })
+
+export default server

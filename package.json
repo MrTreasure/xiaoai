@@ -7,15 +7,18 @@
     "dev": "tsc && node dist/main.js",
     "watch": "tsc -w",
     "build": "tsc",
-    "test": "echo test"
+    "test": "jest --no-cache --config jest.config.json"
   },
   "author": "Treasure",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^23.0.0",
     "@types/koa": "^2.0.46",
     "@types/koa-router": "^7.0.28",
+    "@types/supertest": "^2.0.4",
     "jest": "^23.1.0",
     "koa-body": "^2.6.0",
+    "supertest": "^3.1.0",
     "ts-jest": "^22.4.6",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.9.1"
