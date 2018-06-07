@@ -4,6 +4,7 @@ import * as bodyParse from 'koa-body'
 import * as responseTime from 'koa-response-time'
 import * as helmet from 'koa-helmet'
 import chalk from 'chalk'
+import { logger } from './middleware/logger'
 
 const app = new Koa()
 const router = new Router()
@@ -18,8 +19,10 @@ router.get('/', async (ctx) => {
 // 初始一些
 app.use(responseTime())
 app.use(helmet())
+app.use(logger())
 app.use(bodyParse())
 app.use(router.routes())
+
 
 const server = app.listen(8080, () => {
   const address = server.address()
