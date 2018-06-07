@@ -3,8 +3,10 @@ import config from '../config'
 import * as Koa from 'koa'
 
 log4js.configure(config.logCon)
-const log = log4js.getLogger()
-log.level = 'info'
+const logReq = log4js.getLogger('request')
+const logRes = log4js.getLogger('response')
+logReq.level = 'info'
+logRes.level = 'info'
 
 const requestLog = (ctx: Koa.Context) => {
   let queryString = ''
@@ -27,8 +29,8 @@ const responseLog = (ctx: Koa.Context) => {
 
 export const logger = () => {
   return async (ctx: Koa.Context, next) => {
-    log.info(requestLog(ctx))
+    logReq.info(requestLog(ctx))
     await next()
-    log.info(responseLog(ctx))
+    logRes.info(responseLog(ctx))
   }
 }
