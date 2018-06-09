@@ -23,6 +23,7 @@ const requestLog = (ctx: Koa.Context) => {
   if (!ip) {
     ip = ctx.ip
   }
+  log.info(ctx.get('X-Real-IP'))
   return `${ctx.method} ${ctx.path} IP:${ip} ${queryString}`
 }
 
