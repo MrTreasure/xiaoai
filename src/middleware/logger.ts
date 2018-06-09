@@ -5,6 +5,10 @@ import * as Koa from 'koa'
 log4js.configure(config.logCon)
 const logReq = log4js.getLogger('request')
 const logRes = log4js.getLogger('response')
+
+export const log = log4js.getLogger('console')
+
+log.level = 'info'
 logReq.level = 'info'
 logRes.level = 'info'
 

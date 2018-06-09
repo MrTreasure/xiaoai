@@ -1,13 +1,13 @@
 import * as Koa from 'koa'
-import * as Router from 'koa-router'
 import * as bodyParse from 'koa-body'
 import * as responseTime from 'koa-response-time'
 import * as helmet from 'koa-helmet'
 import chalk from 'chalk'
 import { logger } from './middleware/logger'
+import router from './controller/xiaoai'
+
 
 const app = new Koa()
-const router = new Router()
 const log = console.log
 
 router.get('/', async (ctx) => {
@@ -22,7 +22,6 @@ app.use(helmet())
 app.use(logger())
 app.use(bodyParse())
 app.use(router.routes())
-
 
 const server = app.listen(8080, () => {
   const address = server.address()

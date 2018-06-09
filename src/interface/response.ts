@@ -35,6 +35,8 @@ interface Res {
 
 /**
  * @name ToSpeak
+ * @property { number } type Tts的类型，目前仅支持0：TTS
+ * @property { string } text Tts要说的文本
  */
 interface ToSpeak {
   type: number
