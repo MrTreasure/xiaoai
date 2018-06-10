@@ -1,5 +1,8 @@
 export default {
-  key_group: '321055482556974100',
-  key_id: 'uRzAyG9bgQvytCRLsQXFPw==',
-  secret: 'jO2GpFpDdjHPkHCt/KDNlLwl1eF+e3LmCld+DVGvtHY=',
+  key_group: '323142209912176640',
+  key_id: '2Ul8dqu5Wu09Pg2Xb32jVQ==',
+  secret: 'DDPdfSVMM9jAOh4a2Yqu+GRyNROUndB+3Yi6OD3jiFU=',
+  address: '',
+  username: 'Treasure',
+  password: 'Sunshine@1314'
 }
