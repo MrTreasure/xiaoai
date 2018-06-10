@@ -5,6 +5,7 @@ import * as helmet from 'koa-helmet'
 import chalk from 'chalk'
 import { logger } from './middleware/logger'
 import router from './controller/xiaoai'
+import { auth } from './middleware/auth'
 
 
 const app = new Koa()
@@ -21,6 +22,7 @@ app.use(responseTime())
 app.use(helmet())
 app.use(logger())
 app.use(bodyParse())
+app.use(auth())
 app.use(router.routes())
 
 const server = app.listen(8080, () => {
