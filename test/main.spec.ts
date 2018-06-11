@@ -18,7 +18,7 @@ describe('启动APP', async () => {
 
   test('验证签名', async () => {
     const result = await request(app).get('/hmac/test?id=xxxxx&name=abc').set('Content-Type', 'application/json').field('Date', (new Date()).toString())
-    console.log(result.get('Authorization'))
+    // console.log(result.get('Authorization'))
     expect(result.get('Authorization')).not.toBeNull()
   })
 })

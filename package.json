@@ -16,6 +16,7 @@
     "@types/koa": "^2.0.46",
     "@types/koa-router": "^7.0.28",
     "@types/log4js": "^2.3.5",
+    "@types/sequelize": "^4.27.20",
     "@types/supertest": "^2.0.4",
     "jest": "^23.1.0",
     "koa-body": "^2.6.0",
@@ -31,6 +32,8 @@
     "koa-response-time": "^2.0.0",
     "koa-router": "^7.4.0",
     "log4js": "^2.8.0",
-    "logger": "0.0.1"
+    "logger": "0.0.1",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.10"
   }
 }
