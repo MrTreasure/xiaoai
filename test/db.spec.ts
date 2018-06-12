@@ -20,7 +20,7 @@ beforeAll(async () => {
 })
 
 describe('db test', () => {
-  test('add user', async () => {
+  test.only('add user', async () => {
     const user = new User()
     user.lastActive = new Date()
     user.userId = 'Treasure'
